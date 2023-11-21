@@ -14,5 +14,5 @@ grafana:
   service:
     type: ClusterIP
 ingress:
-  virtual_host_fqdn: grafana-test.techedge.k8s.sc.ipm
+  virtual_host_fqdn: grafana-test.k8s.sc.ipm
 
