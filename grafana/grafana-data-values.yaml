@@ -5,9 +5,14 @@ grafana:
     admin_password: "Vk13YXJlMSE="
   pvc:
     storageClassName: vsphere-tanzu
+  config:
+    grafana_ini: |
+      [smtp]
+      enabled = true
+      host = 172.25.3.10:25
+      skip_verify = true
+  service:
+    type: ClusterIP
 ingress:
-  enabled: true
-  virtual_host_fqdn: "grafana-test.k8s.sc.ipm"
-  prefix: "/"
-  servicePort: 80
+  virtual_host_fqdn: grafana-test.techedge.k8s.sc.ipm
 
