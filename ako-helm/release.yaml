@@ -4,7 +4,6 @@ metadata:
   name: ako-release
   namespace: tanzu-fluxcd-packageinstalls
 spec:
-  prune: true
   interval: 10m
   targetNamespace: default
   chart:
