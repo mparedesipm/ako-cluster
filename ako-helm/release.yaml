@@ -5,7 +5,7 @@ metadata:
   namespace: tanzu-fluxcd-packageinstalls
 spec:
   interval: 10m
-  targetNamespace: default
+  targetNamespace: avi-system
   chart:
     spec:
       chart: ako
