@@ -12,19 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ako
-      values:
-        AKOSettings:
-          clusterName: moodle-cluster
-          layer7Only: true
-        NetworkSettings:
-          vipNetworkList:
-          - networkName: tanzu-frontend
-            cidr: 172.25.5.0/24
-        L7Settings:
-          serviceType: NodePort
-        ControllerSettings:
-          controllerHost: '172.25.2.241'
-        avicredentials:
-          username: 'admin'
-          password: 'IPMipm10!'
+      valuesFiles:
+        - values.yaml
+
 
