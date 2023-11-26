@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: ako-repository
+  name: ako
   namespace: tanzu-fluxcd-packageinstalls
 spec:
   interval: 10m
