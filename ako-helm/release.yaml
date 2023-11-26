@@ -2,8 +2,9 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: ako-release
-  namespace: flux-system
+  namespace: tanzu-fluxcd-packageinstalls
 spec:
+  prune: true
   interval: 10m
   targetNamespace: default
   chart:
