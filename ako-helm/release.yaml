@@ -15,7 +15,7 @@ spec:
         name: ako
   values:
     AKOSettings:
-      clusterName: test-cluster
+      clusterName: normalized-cluster
       layer7Only: true
     NetworkSettings:
       vipNetworkList:
