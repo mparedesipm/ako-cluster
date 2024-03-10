@@ -13,5 +13,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: normalized-cluster
+    namespace: tanzu-continuousdelivery-resources
  
 
