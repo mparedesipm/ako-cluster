@@ -10,6 +10,7 @@ metadata:
   name: alertmanager-main
   namespace: monitoring
 spec:
+  type: LoadBalancer
   ports:
   - name: web
     port: 9093
