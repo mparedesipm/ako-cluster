@@ -10,6 +10,7 @@ metadata:
   name: prometheus-k8s
   namespace: monitoring
 spec:
+  type: LoadBalancer
   ports:
   - name: web
     port: 9090
