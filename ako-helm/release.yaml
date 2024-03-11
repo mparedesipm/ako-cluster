@@ -17,6 +17,7 @@ spec:
     AKOSettings:
       clusterName: normalized-cluster
       layer7Only: true
+      cniPlugin: antrea
     NetworkSettings:
       vipNetworkList:
         - networkName: tanzu-frontend
