@@ -9,6 +9,7 @@ metadata:
   name: prometheus-adapter
   namespace: monitoring
 spec:
+  type: LoadBalancer
   ports:
   - name: https
     port: 443
