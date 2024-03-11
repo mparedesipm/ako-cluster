@@ -17,7 +17,7 @@ spec:
     AKOSettings:
       clusterName: normalized-cluster
       layer7Only: true
-      cniPlugin: antrea
+     # cniPlugin: antrea   modo NodePortLocal
     NetworkSettings:
       nodeNetworkList:
         - networkName: tanzu-wld
@@ -26,7 +26,7 @@ spec:
         - networkName: tanzu-frontend
           cidr: 172.25.5.0/24
     L7Settings:
-      serviceType: NodePortLocal
+      serviceType: NodePort
     ControllerSettings:
       controllerHost: '172.25.2.241'
       controllerVersion: '22.1.4'
