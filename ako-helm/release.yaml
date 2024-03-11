@@ -19,6 +19,9 @@ spec:
       layer7Only: true
       cniPlugin: antrea
     NetworkSettings:
+      nodeNetworkList:
+        - networkName: tanzu-wld
+          cidr: 172.25.4.0/24
       vipNetworkList:
         - networkName: tanzu-frontend
           cidr: 172.25.5.0/24
