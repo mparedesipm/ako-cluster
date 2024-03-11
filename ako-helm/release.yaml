@@ -22,7 +22,7 @@ spec:
         - networkName: tanzu-frontend
           cidr: 172.25.5.0/24
     L7Settings:
-      serviceType: NodePort
+      serviceType: NodePortLocal
     ControllerSettings:
       controllerHost: '172.25.2.241'
       controllerVersion: '22.1.4'
