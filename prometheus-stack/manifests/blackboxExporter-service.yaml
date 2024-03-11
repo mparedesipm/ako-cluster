@@ -9,6 +9,7 @@ metadata:
   name: blackbox-exporter
   namespace: monitoring
 spec:
+  type: LoadBalancer
   ports:
   - name: https
     port: 9115
